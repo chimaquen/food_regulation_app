@@ -1,0 +1,8 @@
+<p>新規通知投稿</p>
+<%= form_with model: @notice, url:"/notices", method: :post, local: true do |f| %>
+  <p>通知タイトル:<%= f.text_field :title %></p>
+  <p>通知名:<%= f.text_field :name %></p>
+  <p>カテゴリー:<%= f.text_field :category %></p>
+  <p>詳細・説明（リンク等）<%= f.text_field :detail %></p>
+  <%= f.submit "送信" %>
+<% end %>

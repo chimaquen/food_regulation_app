@@ -15,6 +15,10 @@ class NoticesController < ApplicationController
     @notice = Notice.find(params[:id])
   end
 
+  def show
+    @notice = Notice.find(params[:id])
+  end
+
   def update
     notice = Notice.find(params[:id])
     notice.update(notice_params)

@@ -1,11 +1,24 @@
-<%= link_to "投稿画面へ", "/notices/new" %>
-<% @notices.each do |notice| %>
-  <p>
-    <%= notice.updated_at %>
-    <%= notice.title %>
-    <%= notice.name %>
-    <%= notice.category %>
-    <%= link_to '削除', "/notices/#{notice.id}", method: :delete, data: {confirm: "削除しますか？"} %>
-    <%= link_to '編集', "/notices/#{notice.id}/edit", method: :get %>
-  </p>
-<% end %>
+<table class="table table-striped">
+  <tr>
+    <th>更新日</th>
+    <th>通知タイトル</th>
+    <th>通知名</th>
+    <th>カテゴリー</th>
+    <th>詳細</th>
+    <th>削除</th>
+    <th>編集</th>
+  </tr>
+
+  <% @notices.each do |notice| %>
+    <tr>
+      <td><%= notice.updated_at %></td>
+      <td><%= notice.title %></td>
+      <td><%= notice.name %></td>
+      <td><%= notice.category %></td>
+      <td><%= link_to '詳細', "/notices/#{notice.id}" %></td>
+      <td><%= link_to '削除', "/notices/#{notice.id}", method: :delete, data: {confirm: "削除しますか？"} %></td>
+      <td><%= link_to '編集', "/notices/#{notice.id}/edit", method: :get %></td>
+    </tr>
+  <% end %>
+
+</table>

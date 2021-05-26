@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/notices/new', to: 'notices#new' 
   post '/notices', to: 'notices#create' 
   get '/notices/:id/edit', to: 'notices#edit'
+  get '/notices/:id', to: 'notices#show'
   patch '/notices/:id', to: 'notices#update'
   delete '/notices/:id', to: 'notices#destroy'
 end

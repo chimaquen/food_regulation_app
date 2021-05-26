@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   root to: 'notices#index'
   get '/notices/new', to: 'notices#new' 
   post '/notices', to: 'notices#create' 
+  get '/notices/:id/edit', to: 'notices#edit'
+  patch '/notices/:id', to: 'notices#update'
   delete '/notices/:id', to: 'notices#destroy'
 end

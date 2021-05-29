@@ -1,2 +1,8 @@
-<%= link_to "通知一覧", root_path %> <%= link_to "新規通知登録", notices_new_path %>
-<hr>
+<div class="navbar bg-primary sticky-top">
+  <div class="text-white">
+    <h1>Food Regulation Search</h1>
+  </div>
+  <div class="text-white">
+    <%= link_to "通知一覧", root_path, class: "nav-link text-white" %> <%= link_to "新規通知登録", notices_new_path, class:"nav-link text-white" %>
+  </div>
+</div>

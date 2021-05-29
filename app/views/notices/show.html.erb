@@ -1,5 +1,19 @@
 <h1>通知詳細</h1>
-<p>通知タイトル <%= @notice.title %></p>
-<p>通知名 <%= @notice.name %></p>
-<p>カテゴリー <%= @notice.category %></p>
-<p>詳細 <%= @notice.detail %></p>
+<table class="table">
+  <tr>
+    <th>通知タイトル</th>
+    <td><%= @notice.title %></td>
+  </tr>  
+  <tr>
+    <th>通知名</th> 
+    <td><%= @notice.name %></td>
+  </tr>
+  <tr>
+    <th>カテゴリー</th> 
+    <td><%= @notice.category %></td>
+  </tr>
+  <tr>
+    <th>詳細</th> 
+    <td><%= @notice.detail %></td>
+  </tr>
+</table>

@@ -1,8 +1,18 @@
-<div class="navbar bg-primary sticky-top">
-  <div class="text-white">
+<div class="navbar bg-success sticky-top d-flex">
+  <div class="text-white" id="apptitle">
     <h1>Food Regulation Search</h1>
   </div>
   <div class="text-white">
-    <%= link_to "通知一覧", root_path, class: "nav-link text-white" %> <%= link_to "新規通知登録", notices_new_path, class:"nav-link text-white" %>
+    <ul class="d-flex list-unstyled">
+      <li>
+        <%= link_to "ログイン", '#', class: "nav-link text-white" %> 
+      </li>
+      <li>
+        <%= link_to "通知一覧", root_path, class: "nav-link text-white" %> 
+      </li>
+      <li>
+        <%= link_to "新規通知登録", notices_new_path, class:"nav-link text-white" %>
+      </li>
+    </ul>
   </div>
 </div>

@@ -1,4 +1,6 @@
-<p>新規通知投稿</p>
+<div class="container">
+  <h1>新規通知投稿</h1>
+</div>
 <%= form_with model: @notice, url:"/notices", method: :post, local: true do |f| %>
 <table class="table">
   <tr>
@@ -18,5 +20,5 @@
     <td><%= f.text_field :detail %></td>
   </tr>
 </table>
-<%= f.submit "送信" %>
+<%= f.submit "送信", class:"bg-success text-white" %>
 <% end %>

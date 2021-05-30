@@ -14,3 +14,29 @@
  *= require_self
  */
  @import "bootstrap/scss/bootstrap";
+
+ body {
+   background-image: url('rayia-soderberg-ezSFnAFi9hY-unsplash.jpg');
+ } 
+
+ .container {
+   text-align: center;
+   background-color: white;
+ }
+
+ #apptitle {
+   font-family: 'Arial Black';
+   font-weight: bold;
+ }
+
+ th {
+  //  width: 20%;
+   background-color: #cccccc;
+ }
+
+ td {
+  //  width: 80%;
+   input {
+     width: 100%;
+   }
+ }

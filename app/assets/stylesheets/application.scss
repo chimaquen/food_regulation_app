@@ -16,12 +16,14 @@
  @import "bootstrap/scss/bootstrap";
 
  body {
-   background-image: url('rayia-soderberg-ezSFnAFi9hY-unsplash.jpg');
+  //  background-image: url('rayia-soderberg-ezSFnAFi9hY-unsplash.jpg');
+  
  } 
 
  .container {
    text-align: center;
    background-color: white;
+   padding: 0 20px;
  }
 
  #apptitle {
@@ -36,6 +38,7 @@
 
  td {
   //  width: 80%;
+  text-align: left;
    input {
      width: 100%;
    }
